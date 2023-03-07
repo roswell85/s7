@@ -13,7 +13,10 @@ import {FontAwesomeModule} from "@fortawesome/angular-fontawesome";
 import {LoginpageModule} from "./pages/loginpage/loginpage.module";
 import {PagesModule} from "./pages/pages/pages.module";
 import {BrowserAnimationsModule} from "@angular/platform-browser/animations";
-
+import {NavbarComponent} from "./pages/navbar/navbar.component";
+import {MenuItem,PrimeIcons} from "primeng/api";
+import {MenubarModule} from 'primeng/menubar';
+import { NavComponent } from './pages/pages/nav/nav.component';
 @NgModule({
   declarations: [
     AppComponent,
@@ -28,7 +31,9 @@ import {BrowserAnimationsModule} from "@angular/platform-browser/animations";
     NgbModule,
     FontAwesomeModule,
     LoginpageModule,
-    PagesModule,BrowserAnimationsModule
+    BrowserAnimationsModule,
+    PagesModule,
+    MenubarModule
   ],
   providers: [],
   bootstrap: [AppComponent]
